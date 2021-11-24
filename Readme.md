@@ -4,4 +4,4 @@ This [Tampermonkey](https://tampermonkey.net/) script adds a likes to views rati
 
 ## Installation
 
-First [install Tampermonkey](https://tampermonkey.net/) and then click [here](https://github.com/DerEnderKeks/YTLikeViewRatio/raw/master/ytlikeviewratio.user.js).
+First [install Tampermonkey](https://tampermonkey.net/) and then click [here](https://github.com/DerEnderKeks/YTLikeViewRatio/raw/main/ytlikeviewratio.user.js).

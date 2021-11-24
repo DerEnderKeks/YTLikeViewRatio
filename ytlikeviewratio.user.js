@@ -6,8 +6,8 @@
 // @author       DerEnderKeks
 // @website      https://github.com/DerEnderKeks/YTLikeViewRatio
 // @supportURL   https://github.com/DerEnderKeks/YTLikeViewRatio/issues
-// @updateURL    https://github.com/DerEnderKeks/YTLikeViewRatio/raw/master/ytlikeviewratio.user.js
-// @downloadURL  https://github.com/DerEnderKeks/YTLikeViewRatio/raw/master/ytlikeviewratio.user.js
+// @updateURL    https://github.com/DerEnderKeks/YTLikeViewRatio/raw/main/ytlikeviewratio.user.js
+// @downloadURL  https://github.com/DerEnderKeks/YTLikeViewRatio/raw/main/ytlikeviewratio.user.js
 // @match        https://www.youtube.com/watch?*
 // @icon         https://www.google.com/s2/favicons?domain=youtube.com
 // @grant        none
