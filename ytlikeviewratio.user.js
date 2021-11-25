@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Like:View Ratio
 // @namespace    https://youtube.com/
-// @version      0.0.1
+// @version      0.0.2
 // @description  Adds a like:view ratio to YouTube
 // @author       DerEnderKeks
 // @website      https://github.com/DerEnderKeks/YTLikeViewRatio
@@ -56,17 +56,18 @@
     const config = { attributes: true, childList: true, subtree: true };
     const callback = function (mutationsList, observer) {
         let viewsElement = document.querySelector('span.view-count')
-        if (!viewsElement) {
+        let buttonElement = document.querySelector('#info #menu #top-level-buttons-computed')
+        let likesElement = buttonElement.firstElementChild.querySelector('ytd-toggle-button-renderer > a > yt-formatted-string')
+
+        if (!(viewsElement && buttonElement && likesElement)) {
             return
         }
 
         observer.disconnect();
-        let buttonElement = document.getElementById('top-level-buttons-computed')
 
         const viewsString = viewsElement.innerHTML.split(' ')[0]
         const views = parseLongNumber(viewsString)
-
-        let likesElement = buttonElement.firstElementChild.querySelector('ytd-toggle-button-renderer > a > yt-formatted-string')
+        
         const likesString = likesElement.innerHTML
         const likes = parseShortNumber(likesString)
 
